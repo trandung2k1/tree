@@ -147,7 +147,7 @@
       bgMusic.volume = 1.0;
 
       const loader = new THREE.TextureLoader();
-      const photoFiles = ['./img/a1.jpg', './img/a2.jpg', './img/a3.jpg', './img/a4.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
+      const photoFiles = ['./img/a1.jpg', './img/a2.jpg', './img/a3.jpg', './img/a4.jpg', './img/a6.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
       const photoTextures = [];
       photoFiles.forEach((f, i) => (photoTextures[i] = loader.load(f)));
 
@@ -311,7 +311,7 @@
         const borderGeo = new THREE.PlaneGeometry(9, 9);
         const borderMat = new THREE.MeshBasicMaterial({ color: 0xffd700 });
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
           const mat = new THREE.MeshBasicMaterial({
             map: photoTextures[i],
             side: THREE.DoubleSide,
